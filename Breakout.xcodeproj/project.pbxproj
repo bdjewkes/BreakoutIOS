@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A3107C921B4C4185004CA1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3107C911B4C4185004CA1B6 /* AppDelegate.swift */; };
-		A3107C941B4C4185004CA1B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3107C931B4C4185004CA1B6 /* ViewController.swift */; };
 		A3107C971B4C4185004CA1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3107C951B4C4185004CA1B6 /* Main.storyboard */; };
 		A3107C991B4C4185004CA1B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3107C981B4C4185004CA1B6 /* Images.xcassets */; };
 		A3107C9C1B4C4185004CA1B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3107C9A1B4C4185004CA1B6 /* LaunchScreen.xib */; };
 		A3107CA81B4C4186004CA1B6 /* BreakoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3107CA71B4C4186004CA1B6 /* BreakoutTests.swift */; };
+		A3107CB21B4C428D004CA1B6 /* BreakoutGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3107CB11B4C428D004CA1B6 /* BreakoutGameViewController.swift */; };
+		A3107CB41B4C42E0004CA1B6 /* BezierPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3107CB31B4C42E0004CA1B6 /* BezierPathView.swift */; };
+		A3107CB61B4C62F8004CA1B6 /* BreakoutBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3107CB51B4C62F8004CA1B6 /* BreakoutBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		A3107C8C1B4C4185004CA1B6 /* Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3107C901B4C4185004CA1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3107C911B4C4185004CA1B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3107C931B4C4185004CA1B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3107C961B4C4185004CA1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3107C981B4C4185004CA1B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A3107C9B1B4C4185004CA1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A3107CA11B4C4186004CA1B6 /* BreakoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3107CA61B4C4186004CA1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3107CA71B4C4186004CA1B6 /* BreakoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakoutTests.swift; sourceTree = "<group>"; };
+		A3107CB11B4C428D004CA1B6 /* BreakoutGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakoutGameViewController.swift; sourceTree = "<group>"; };
+		A3107CB31B4C42E0004CA1B6 /* BezierPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierPathView.swift; sourceTree = "<group>"; };
+		A3107CB51B4C62F8004CA1B6 /* BreakoutBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakoutBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,10 @@
 		A3107C8E1B4C4185004CA1B6 /* Breakout */ = {
 			isa = PBXGroup;
 			children = (
-				A3107C911B4C4185004CA1B6 /* AppDelegate.swift */,
-				A3107C931B4C4185004CA1B6 /* ViewController.swift */,
 				A3107C951B4C4185004CA1B6 /* Main.storyboard */,
-				A3107C981B4C4185004CA1B6 /* Images.xcassets */,
-				A3107C9A1B4C4185004CA1B6 /* LaunchScreen.xib */,
+				A3107CB11B4C428D004CA1B6 /* BreakoutGameViewController.swift */,
+				A3107CB51B4C62F8004CA1B6 /* BreakoutBehavior.swift */,
+				A3107CB31B4C42E0004CA1B6 /* BezierPathView.swift */,
 				A3107C8F1B4C4185004CA1B6 /* Supporting Files */,
 			);
 			path = Breakout;
@@ -90,6 +93,9 @@
 		A3107C8F1B4C4185004CA1B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3107C981B4C4185004CA1B6 /* Images.xcassets */,
+				A3107C9A1B4C4185004CA1B6 /* LaunchScreen.xib */,
+				A3107C911B4C4185004CA1B6 /* AppDelegate.swift */,
 				A3107C901B4C4185004CA1B6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3107C941B4C4185004CA1B6 /* ViewController.swift in Sources */,
+				A3107CB21B4C428D004CA1B6 /* BreakoutGameViewController.swift in Sources */,
 				A3107C921B4C4185004CA1B6 /* AppDelegate.swift in Sources */,
+				A3107CB61B4C62F8004CA1B6 /* BreakoutBehavior.swift in Sources */,
+				A3107CB41B4C42E0004CA1B6 /* BezierPathView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
